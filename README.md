@@ -11,18 +11,18 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
  
 
  - [x] Exchange Clipboards between iOS and Windows <br>
-		 - 💻->📱Files stored in Windows's clipboard can be transfered to iOS devices (Image, Video, PDF, Text, Zip, ect..)
+		 - 💻->📱Files stored in Windows's clipboard can be transfered to iOS devices (Image, Video, PDF, Text, Zip, ect..)<br>
 		 - 📱->💻For now only text and Images can be transfered from iOS devices to Windows computers
 
  - [x] File transfert <br>
-		 - 💻 The Windows computer hosts an HTTP server, you can access the files stored in the **Share** folder by going to the website of the machine with its IP address, Or by storing the file in the clipboard and send it to the iOS device.
+		 - 💻 The Windows computer hosts an HTTP server, you can access the files stored in the **Share** folder by going to the website of the machine with its IP address, Or by storing the file in the clipboard and send it to the iOS device.<br>
 		 - 📱iOS devices send the file with a POST request to the HTTP server and are saved in the **Share** folder.
 	
 - [x] Urls <br>
-	     - 💻->📱copy the URL to the clipboard on the computer and retrieve it on the iOS device. The shortcut will detect the URL and display a prompt to open it in Safari.
+	     - 💻->📱copy the URL to the clipboard on the computer and retrieve it on the iOS device. The shortcut will detect the URL and display a prompt to open it in Safari.<br>
 	     - 📱->💻a prompt will ask you if you want to copy the URL to the computer's clipboard or open it in its default browser.
 - [ ] Good **GUI** <br>
-		- 📱it is only a shortcut in the shortcut application, and can be accessed from the share sheet or by running the shortcut
+		- 📱it is only a shortcut in the shortcut application, and can be accessed from the share sheet or by running the shortcut.<br>
 		- 💻I have for project to create a HTML page allowing to visualize easily all the files in the folder **share** and to download and upload files. it remains a WIP
 	
 ## Some Screenshots
