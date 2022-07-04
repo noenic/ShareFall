@@ -32,7 +32,7 @@ Default prompt when launching the shortcut from the shortcut app
 When you retrieve the clipboard from the computer and its a URL
 ![received url](https://github.com/noenic/ShareFall/blob/main/images/is_that_a_url.jpeg?raw=true)
 
-When you retrieve the clipboard from the computer and its an Image
+When you retrieve the clipboard from the computer and its an Image<br>
 ![received url](https://github.com/noenic/ShareFall/blob/main/images/get_image_from_PC_clipboard.png?raw=true)
 
 **More screenshots comming later**
