@@ -31,8 +31,8 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 
 ## How does it work ?
 
-it's simply a python program hosting an http server on your computer 💻 with the possibility to upload files. 
-To be honest the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
+it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files. 
+To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
 On the iOS device📱 it is a shortcut of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
