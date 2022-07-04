@@ -6,7 +6,7 @@ Some people like the Apple ecosystem but are not attracted by MacOS.
 Content sharing between IOS and other operating systems is always annoying.  Snapdrop was a good alternative but doesn't offer as good integration as I hope ShareFall will, plus snapdrop doesn't work all the time. 
 
 
-# What can't it do ?
+# What can it do ?
 
  
 
