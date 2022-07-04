@@ -26,15 +26,23 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 		- 💻I have for project to create a HTML page allowing to visualize easily all the files in the folder **share** and to download and upload files. it remains a WIP
 	
 ## Some Screenshots
+Default prompt when launching the shortcut from the shortcut app
+![default prompt](https://github.com/noenic/ShareFall/blob/main/images/generic_prompt.jpeg?raw=true)
 
+When you retrieve the clipboard from the computer and its a URL
+![received url](https://github.com/noenic/ShareFall/blob/main/images/is_that_a_url.jpeg?raw=true)
 
+When you retrieve the clipboard from the computer and its an Image
+![received url](https://github.com/noenic/ShareFall/blob/main/images/get_image_from_PC_clipboard.png?raw=true)
+
+**More screenshots comming later**
 
 ## How does it work ?
 
 it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files. 
 To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
-On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/0b63d149239e4fa4948e76ab0bb0bbb4) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
+On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/c69fa84583654d828ea2ab85fc82cf54) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
 ## Any drawbacks?
 
@@ -59,4 +67,4 @@ you can change the listening port and the token of the HTTP server in **ShareFal
 
 In the iOS shortcut add the IP of your machine and the listening port of the HTTP server
 
-
+Don't forget to add the shortcut in the favorite tab of your Sharesheet
