@@ -34,7 +34,7 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files. 
 To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
-On the iOS device📱 it is a shortcut of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
+On the iOS device📱 it is a s[hortcut](https://www.icloud.com/shortcuts/0b63d149239e4fa4948e76ab0bb0bbb4) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
 ## Any drawbacks?
 
@@ -46,6 +46,9 @@ On the iOS device📱 it is a shortcut of a hundred blocks long that does almost
 
 - The IP system needs to be reworked, the goal is that everything works regardless of the network. 
 
+- Some parts of the shortcut are based on text in an entry, normally it should work with English and French language devices.
+If you ever use another language you will have to modify the text comparison
+
 
 
 ## Configuration 
@@ -55,6 +58,5 @@ if you don't have all the necessary dependencies, run : **pip install -r require
 you can change the listening port and the token of the HTTP server in **ShareFallServer.bat** by default 80 and "token".
 
 In the iOS shortcut add the IP of your machine and the listening port of the HTTP server
-
 
 
