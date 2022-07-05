@@ -12,7 +12,7 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 
  - [x] Exchange Clipboards between iOS and Windows <br>
 		 - 💻->📱Files stored in Windows's clipboard can be transfered to iOS devices (Image, Video, PDF, Text, Zip, ect..)<br>
-		 - 📱->💻For now only text and Images can be transfered from iOS devices to Windows computers
+		 - 📱->💻For now only text and Images can be transfered from iOS devices to Windows computers clipboards
 
  - [x] File transfert <br>
 		 - 💻 The Windows computer hosts an HTTP server, you can access the files stored in the **Share** folder by going to the website of the machine with its IP address, Or by storing the file in the clipboard and send it to the iOS device.<br>
@@ -39,7 +39,7 @@ When you retrieve the clipboard from the computer and its an Image<br>
 
 ## How does it work ?
 
-it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files (<i>the python code is sourced from this repo with the addition of specific code to use ShareFall. The application uses all the backend of the uploadserver module, so it inherits all the other characteristics.</i>).
+it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files (<i>the python code is sourced from the linked repo with the addition of specific code to use ShareFall. The application uses all the backend of the uploadserver module, so it inherits all the other characteristics.</i>).
 To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
 On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/c69fa84583654d828ea2ab85fc82cf54) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
@@ -50,7 +50,7 @@ On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/c69fa8
 
 - You can't directly send data to the iOS device, at least not with a shortcut, the device must always request it first and then the server will send the requested content, a bit stupid in some situations.
 
-- The shortcut application can determine the type of file received (pdf, zip, etc...). But I have not yet found a way to determine the binary file received by the python program, for the moment only text and image files can be received 
+- The shortcut application can determine the type of file received (pdf, zip, etc...) and place it in the clipboard. But I have not yet found a way to determine the binary file received by the python program and place it in the windows clipboard, for the moment only text and image files can be placed in windows clipboard
 
 - The IP system needs to be reworked, the goal is that everything works regardless of the network. 
 
