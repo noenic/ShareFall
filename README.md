@@ -43,7 +43,7 @@ When you retrieve the clipboard from the computer and its an Image<br>
 it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files (<i>the python code is sourced from the linked repo with the addition of specific code to use ShareFall. The application uses all the backend of the uploadserver module, so it inherits all the other characteristics.</i>).
 To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
-On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/c69fa84583654d828ea2ab85fc82cf54) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
+On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/300f4feb8acb4e3c8882f24b472ee9f2) of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
 ## Any drawbacks?
 
