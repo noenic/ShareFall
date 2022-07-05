@@ -57,6 +57,8 @@ On the iOS device📱 it is a [shortcut](https://www.icloud.com/shortcuts/c69fa8
 - Some parts of the shortcut are based on text in an entry, normally it should work with English and French language devices.
 If you ever use another language you will have to modify the text comparison
 
+- it looks like https doesn't want to work properly because the shortcut request action doesn't allow self-signed certificates. Another dumb thing since certificates can be accepted on safari. 
+
 
 
 ## Configuration 
