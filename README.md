@@ -58,7 +58,8 @@ On the iOS device📱 it is a  shortcut of a hundred blocks long that does almos
 
 - The shortcut application can determine the type of file received (pdf, zip, etc...) and place it in the clipboard. But I have not yet found a way to determine the binary file received by the python program and place it in the windows clipboard, for the moment only text and image files can be placed in windows clipboard
 
-- The IP system needs to be reworked, the goal is that everything works regardless of the network. 
+- The IP system needs to be reworked, the goal is that everything works regardless of the network.
+	(Added a workaround, see below in the configuration section) 
 
 - Some parts of the shortcut are based on text in an entry, normally it should work with English and French language devices.
 If you ever use another language you will have to modify the text comparison
@@ -73,6 +74,9 @@ if you don't have all the necessary dependencies, run : **pip install -r require
 
 you can change the listening port and the token of the HTTP server in **ShareFallServer.bat** by default 80 and "token".
 
-In the iOS shortcut add the IP of your machine and the listening port of the HTTP server
+In the iOS shortcut add the IP of your machine and the listening port of the HTTP server.
+In the dictionary add the IP, The network name will be the key and the computer ip will be the value.
+The network name must be exactly the same.
+One of the keys is empty, it is the case where your device is not connected to a WIFI network already filled, here put the address of your computer when it is in hotspot 
 
 Don't forget to add the shortcut in the favorite tab of your Sharesheet
