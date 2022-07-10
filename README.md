@@ -1,6 +1,9 @@
 # Welcome to ShareFall!
 What is ShareFall ? ShareFall is an application that aims to give a lot of the untouchable features of Airdrop to Windows users. 
 
+You will need this shortcut :
+The latest shortcut can be downloaded [here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)
+
 # Why ShareFall ?
 Some people like the Apple ecosystem but are not attracted by MacOS.
 Content sharing between IOS and other operating systems is always annoying.  Snapdrop was a good alternative but doesn't offer as good integration as I hope ShareFall will, plus snapdrop doesn't work all the time. 
@@ -45,7 +48,7 @@ To be honest the my side of the code is far from excellent and not the most opti
 
 On the iOS device📱 it is a  shortcut of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
-The latest shortcut can be downloaded [here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)
+
 
 ## Any drawbacks?
 
