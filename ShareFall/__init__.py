@@ -120,7 +120,7 @@ def receive_upload(handler):
     if 'copy' in form:
         """Copies to the clipboard of this computer the content received in the request"""
         fields = form['copy']
-        content=fields.filename[:-4]
+        content=fields.value
         print("\n\n",content,"\n\nSent to the Clipboard!`\n\n")
         send_to_clipboard(win32clipboard.CF_UNICODETEXT, content)
         result = (http.HTTPStatus.NO_CONTENT, None)
@@ -164,7 +164,7 @@ def receive_upload(handler):
             output.close()
             send_to_clipboard(win32clipboard.CF_DIB, data)
         except Exception as Error:
-            print("The content received can't be used as an image",error)
+            print("The content received can't be used as an image",Error)
         f.close()
         
         
