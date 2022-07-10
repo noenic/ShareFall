@@ -3,6 +3,7 @@ What is ShareFall ? ShareFall is an application that aims to give a lot of the u
 
 You will need this shortcut :
 - ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)🟩 (v1.5)
+- 🇩🇪 Thanks to [@Soljanka](https://github.com/Soljanka) for a German translation of the shortcut and can be downloaded 🟩[here](https://www.icloud.com/shortcuts/32b8421080d6413bb2353cb14934215b)🟩 (v1.5)
 
 # Why ShareFall ?
 Some people like the Apple ecosystem but are not attracted by MacOS.
