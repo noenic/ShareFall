@@ -67,6 +67,10 @@ If you ever use another language you will have to modify the text comparison
 
 - it looks like https doesn't want to work properly because the shortcut request action doesn't allow self-signed certificates. Another dumb thing since certificates can be accepted on safari. 
 
+- ⚠️ **Be aware that the requests are made in http and not https. The traffic is clear on the network. The token allows to prevent easy  manipulation of the server. However it is possible to see the token in clear if a http snitch is present.
+I advise you to use this method only on trusted network or personal connection hotspot from your iPhone.
+some features can be used for bad purposes.
+Still working on it** ⚠️
 
 
 ## Configuration 
