@@ -2,7 +2,7 @@
 What is ShareFall ? ShareFall is an application that aims to give a lot of the untouchable features of Airdrop to Windows users. 
 
 You will need this shortcut :
-The latest shortcut can be downloaded [here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)
+- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)🟩
 
 # Why ShareFall ?
 Some people like the Apple ecosystem but are not attracted by MacOS.
