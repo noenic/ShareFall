@@ -1,9 +1,19 @@
 # Welcome to ShareFall!
 What is ShareFall ? ShareFall is an application that aims to give a lot of the untouchable features of Airdrop to Windows users. 
 
+
+**⚠️THERE ARE TWO VERSIONS, ONE IN [PHP](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion) AND ONE IN [PYTHON](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion).
+
+The PHP version is the most recent that why it's on the front page, the python version still works⚠️**
+
+
+
+
 You will need this shortcut :
-- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)🟩 (v1.5)
-- 🇩🇪 Thanks to [@Soljanka](https://github.com/Soljanka) for a German translation of the shortcut and can be downloaded 🟩[here](https://www.icloud.com/shortcuts/32b8421080d6413bb2353cb14934215b)🟩 (v1.5)
+- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/ffc78f28751f4fa3a94fee8cc8619e8d)🟩 (v1 PHP)
+- ❌ This shortcut will always make textual comparisons with data transmitted by your device, this shortcut works for IOS devices in English and French, if you have another language you should probably make modifications in the shortcut to the various comparisons
+
+Server Side you will need **PHP** 8.1 (probably works with 7.4 but couldn't get the console logs on the screen)
 
 # Why ShareFall ?
 Some people like the Apple ecosystem but are not attracted by MacOS.
@@ -16,7 +26,7 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 
  - [x] Exchange Clipboards between iOS and Windows <br>
 		 - 💻->📱Files stored in Windows's clipboard can be transfered to iOS devices (Image, Video, PDF, Text, Zip, ect..)<br>
-		 - 📱->💻For now only text and Images can be transfered from iOS devices to Windows computers clipboards
+		 - 📱->💻For now only text and Images can be transfered from iOS devices to Windows computers clipboards other files will be send to the share folder (If anyone knows how to send files to the clipboard let me know)
 
  - [x] File transfert <br>
 		 - 💻 The Windows computer hosts an HTTP server, you can access the files stored in the **Share** folder by going to the website of the machine with its IP address, Or by storing the file in the clipboard and send it to the iOS device.<br>
@@ -44,8 +54,8 @@ When you retrieve the clipboard from the computer and its an Image<br>
 
 ## How does it work ?
 
-it's simply a python program hosting an [http server](https://github.com/Densaugeo/uploadserver) on your computer 💻 with the possibility to upload files (<i>the python code is sourced from the linked repo with the addition of specific code to use ShareFall. The application uses all the backend of the uploadserver module, so it inherits all the other characteristics.</i>).
-To be honest the my side of the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
+Compared to the Python version, this version works with PHP, which allows to have more reactivity as well as a better management of the files and download, on the other hand it does not manage all the management of the clipboard hence the reason why a python file is always necessary 💻
+To be honest the code is far from excellent and not the most optimized, any suggestion for improvement will be  highly appreciated.
 
 On the iOS device📱 it is a  shortcut of a hundred blocks long that does almost all the actions. This shortcut file is not the most optimized either but it's really hard to do something clean with an application that crashes randomly after 40 blocks and that has no real if-else statement and true variable management. One day I will switch some parts to scriptable 
 
@@ -57,7 +67,7 @@ On the iOS device📱 it is a  shortcut of a hundred blocks long that does almos
 
 - You can't directly send data to the iOS device, at least not with a shortcut, the device must always request it first and then the server will send the requested content, a bit stupid in some situations.
 
-- The shortcut application can determine the type of file received (pdf, zip, etc...) and place it in the clipboard. But I have not yet found a way to determine the binary file received by the python program and place it in the windows clipboard, for the moment only text and image files can be placed in windows clipboard
+- The shortcut application can determine the type of file received (pdf, zip, etc...) and place it in the clipboard. But I have not yet found a way to determine the binary file received by the python program and place it in the windows clipboard, for the moment only text and image files can be placed in windows clipboard other files will be sent to the share folder.
 
 - The IP system needs to be reworked, the goal is that everything works regardless of the network.
 	(Added a workaround, see below in the configuration section) 
@@ -72,16 +82,29 @@ I advise you to use this method only on trusted network or personal connection h
 some features can be used for bad purposes.
 Still working on it** ⚠️
 
+- ℹ️To send special requests to the server you will need to add the IP adress of your device in the **index.php** file, it adds an extra security layer but can easly be worked around by spoofing the  allowed IPs  
+
+
 
 ## Configuration 
 There is not much configuration.
 if you don't have all the necessary dependencies, run : **pip install -r requirements.txt**
 
-you can change the listening port and the token of the HTTP server in **ShareFallServer.bat** by default 80 and "token".
+you can change the listening port of the HTTP server in **run.bat** by default 28080
 
 In the iOS shortcut add the IP of your machine and the listening port of the HTTP server.
 In the dictionary add the IP, The network name will be the key and the computer ip will be the value.
 The network name must be exactly the same.
 One of the keys is empty, it is the case where your device is not connected to a WIFI network already filled, here put the address of your computer when it is in hotspot 
+
+**On the Server side**
+Check the **index.php** You will see to configuration variables that you way want to change.
+```php
+//This is where you gonna add the IP adresses that will be allowed to execute requests
+$authorized_ips = array("127.0.0.1",'xxx.xxx.xxx.xxx","yyy.yyy.yyy.yyy");
+//This will be the secret not so secret token
+$token = "LovelyToken";
+```
+
 
 Don't forget to add the shortcut in the favorite tab of your Sharesheet
