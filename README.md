@@ -3,7 +3,6 @@ What is ShareFall ? ShareFall is an application that aims to give a lot of the u
 
 
 **⚠️THERE ARE TWO VERSIONS, ONE IN [PHP](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion) AND ONE IN [PYTHON](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion).
-
 The PHP version is the most recent that why it's on the front page, the python version still works⚠️**
 
 
