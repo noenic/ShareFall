@@ -2,15 +2,20 @@
 What is ShareFall ? ShareFall is an application that aims to give a lot of the untouchable features of Airdrop to Windows users. 
 
 
-**⚠️THERE ARE TWO VERSIONS, ONE IN [PHP](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion) AND ONE IN [PYTHON](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion).
+**⚠️THERE ARE TWO VERSIONS, ONE IN [PHP](https://github.com/noenic/ShareFall/tree/main/src/PHPVersion) AND ONE IN [PYTHON](https://github.com/noenic/ShareFall/tree/main/src/PythonVersion).
 The PHP version is the most recent that why it's on the front page, the python version still works⚠️**
 
 
 
 
-You will need this shortcut :
-- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/ffc78f28751f4fa3a94fee8cc8619e8d)🟩 (v1 PHP)
-- ❌ This shortcut will always make textual comparisons with data transmitted by your device, this shortcut works for IOS devices in English and French, if you have another language you should probably make modifications in the shortcut to the various comparisons
+You will need this shortcut :<br><br>
+**PHP**<br><br>
+--------- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/ffc78f28751f4fa3a94fee8cc8619e8d)🟩 (v1 PHP)<br><br>
+**Python**<br><br>
+--------- ✔ The latest shortcut can be downloaded 🟩[here](https://www.icloud.com/shortcuts/b08169c668154fdf84d153b5f71674b8)🟩 (v1.5)<br>
+--------- 🇩🇪 Thanks to [@Soljanka](https://github.com/Soljanka) for a German translation of the shortcut and can be downloaded 🟩[here](https://www.icloud.com/shortcuts/32b8421080d6413bb2353cb14934215b)🟩 (v1.5)
+<br><br>
+❌ This shortcut will always make textual comparisons with data transmitted by your device, this shortcut works for IOS devices in English and French, if you have another language you should probably make modifications in the shortcut to the various comparisons
 
 Server Side you will need **PHP** 8.1 (probably works with 7.4 but couldn't get the console logs on the screen)
 
