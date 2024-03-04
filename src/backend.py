@@ -95,17 +95,21 @@ def get_image_file_thumbnail(file):
     """
     try :
         img = Image.open(file)
-        for orientation in ExifTags.TAGS.keys() : 
-            if ExifTags.TAGS[orientation]=='Orientation' : break 
-        exif=dict(img._getexif().items())
+        try : 
+            for orientation in ExifTags.TAGS.keys() : 
+                if ExifTags.TAGS[orientation]=='Orientation' : break 
+            exif=dict(img._getexif().items())
 
-        if   exif[orientation] == 3 : 
-            img=img.rotate(180, expand=True)
-        elif exif[orientation] == 6 : 
-            img=img.rotate(270, expand=True)
-        elif exif[orientation] == 8 : 
-            img=img.rotate(90, expand=True)
-
+            if   exif[orientation] == 3 : 
+                img=img.rotate(180, expand=True)
+            elif exif[orientation] == 6 : 
+                img=img.rotate(270, expand=True)
+            elif exif[orientation] == 8 : 
+                img=img.rotate(90, expand=True)
+        except:
+            # cases: image don't have getexif
+            pass
+        
         # We use the size of the original image to keep the same aspect ratio
         size=(img.size[0]//10,img.size[1]//10)
         img.thumbnail(size)
