@@ -57,7 +57,6 @@ def get_clipboard():
 
         win32clipboard.CloseClipboard()
 
-        print(result)
         return result
     
 
