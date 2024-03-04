@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File browser</title>
+</head>
+<body>
+    <h1>File browser</h1>
+    <ul>
+        {% for file in files %}
+        <li>
+                <section  class=container" id="icon_container">
+                    <img  src="{{ file.icon }}" alt="">
+                </section>
+                <section class="container" id="link_container">
+                    <a class="filename" href="{{ file.url }}" target="_blank">{{ file.filename }}</a>
+                </section>
+                <section class="container" id="button_container">
+                    <a class=download" href="{{ file.url }}" download="{{ file.filename }}"> <button>Download</button></a>
+                </section>
+        </li>
+        {% endfor %}
+    </ul>
+    <footer>
+        <p>Thumbnails are not the original images they are just for display purposes use the download button to get the original file</p>
+    </footer>
+
+</body>
+</html>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    flex: 1;
+    align-items: center;
+}
+
+#button_container {
+    text-align: right;
+    
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; Pour s'assurer que l'image remplit complètement le conteneur */
+    border-radius: 5px;
+}   
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8em;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.download {
+    text-align: right;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+</style>
+
