@@ -30,7 +30,7 @@ Content sharing between IOS and other operating systems is always annoying.  Sna
 - [x] Urls <br>
 	     - 💻->📱copy the URL to the clipboard on the computer and retrieve it on the iOS device. The shortcut will detect the URL and display a prompt to open it in Safari.<br>
 	     - 📱->💻a prompt will ask you if you want to copy the URL to the computer's clipboard or open it in its default browser (by default **AUTO_OPEN_BROWSER** is set to 0 meaning the app will wait for user confirmation before opening the browser)
-- [~] Good **GUI** <br>
+- [ ] Good **GUI** (WIP) <br>
 		- 📱it is only a shortcut in the shortcut application, and can be accessed from the share sheet or by running the shortcut.<br>
 		- 💻There is a html page allowing you to visualize easily all the files in the  **share** folder and download them (upload is not yet implemented). it remains a WIP
 	
