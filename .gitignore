@@ -1,3 +1,4 @@
-ShareFall/share
-ShareFall/__pycache__
+share/
+__pycache__/
+temp/
 *.bat
